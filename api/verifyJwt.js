@@ -46,7 +46,7 @@ module.exports = {
                     errors: err
                 })
             }
-            const response = await axios.get('http://localhost/dev-jds/auth-app/api/v1/user-profile', {
+            const response = await axios.get('https://auth-jds-app.herokuapp.com/api/v1/user-profile', {
                 headers: {
                     'authorization': `Bearer ${token}`
                 }
